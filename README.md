@@ -1,1 +1,1 @@
-# icecream.github.io
+# icecream-bar.github.io
