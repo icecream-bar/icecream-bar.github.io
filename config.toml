@@ -1,8 +1,8 @@
-baseURL = "https://icecream-bar.github.io"
+baseURL = "https://icecream-bar.github.io/"
 languageCode = "en-us"
 theme = "hugo-winston-theme"
 themesDir = "themes"
-title = "Icecream Blog"
+title = "Icecream"
 paginate = 3
 pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
