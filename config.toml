@@ -35,7 +35,7 @@ pygmentsUseClasses = true
   baseColor = "#4B4453"
   baseOffsetColor = "#eaeaea"
   headingColor = "#1c1b1d"
-  textColor = "#B0A8B9"
+  textColor = "#FF8066"
   dotColor = "#FF8066"
   enableGoogleFonts = true 
   googleFontsUrl = "https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"

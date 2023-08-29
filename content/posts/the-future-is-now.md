@@ -16,7 +16,7 @@ Hey debuggers and code wranglers! 🐍💻 Ever found yourself in the midst of a
 
 First things first, you gotta summon pwndbg into action. Here's the incantation:
 
-```bash
+```sh
 $ gdb -q ./your_binary
 (gdb) source /path/to/pwndbg/gdbinit.py
 ```
@@ -27,39 +27,37 @@ Now that pwndbg is your loyal companion, let's dive into some commands:
 
 ### Basic Commands
 
-- info functions: This command is your treasure map to discovering all the functions within your program or binary. It's like finding secret chambers in a labyrinth!
-- disassemble *function:  Is used to disassemble a function in your program. This means it will display the assembly language code for the function specified. For instance, if you have a function named "main" in your program, you can see its assembly code by typing `disass main` in the pwndbg prompt.
-- context: The all-seeing eye! Displays register values, stack, and code around the current instruction. Your debugging compass.
-- next (or n): March forward one instruction. Keep the quest going!
-- break *address: Set a breakpoint at a specific memory address. It's like dropping a pin on the treasure map.
+| Command | Description |
+|:---------| :---------- |
+| **`info functions`** | This command is your treasure map to discovering all the functions within your program or binary. It's like finding secret chambers in a labyrinth! |
+| **`disassemble *function`** | Is used to disassemble a function in your program. This means it will display the assembly language code for the function specified. For instance, if you have a function named "main" in your program, you can see its assembly code by typing `disass main` in the pwndbg prompt. |
+| **`context`** | The all-seeing eye! Displays register values, stack, and code around the current instruction. Your debugging compass. |
+| **`next (or n)`** | March forward one instruction. Keep the quest going! |
+| break *address | Set a breakpoint at a specific memory address. It's like dropping a pin on the treasure map. |
 
 ### Inspecting Memory
 
-- `x/[Nfu] address`: eXamine memory at a given address. For example, `x/16xg $rsp` `x/s 0x400764`  peeks into 16 quadwords starting from the stack pointer. Use it to inspect treasures (or vulnerabilities) hidden in memory.
-
-- `heap`: Your shovel for digging into heap structures. Unearth those dynamic memory secrets!
+| Command | Description |
+|:---------| :---------- |
+| **`x/[Nfus] address`** | eXamine memory at a given address. For example, `x/16xg $rsp` `x/s 0x400764`  peeks into 16 quadwords starting from the stack pointer. Use it to inspect treasures (or vulnerabilities) hidden in memory. |
+| **`heap`** | Your shovel for digging into heap structures. Unearth those dynamic memory secrets! |
 
 ### Stack Control
 
-- `cyclic N`: Craft cyclic patterns for buffer overflows. You'll crack that safe by testing for buffer overflows like a pro!
-
-- `pattern offset <register>`: Determine the offset where a pattern you crafted has overwritten a register or memory location. Find the X that marks the spot!
-
-- `gef config context.layout`: Customize how context info is displayed, like arranging your toolbelt.
+| Command | Description |
+|:---------| :---------- |
+| **`cyclic N`** | Craft cyclic patterns for buffer overflows. You'll crack that safe by testing for buffer overflows like a pro! |
+| **`pattern offset <register>`** | Determine the offset where a pattern you crafted has overwritten a register or memory location. Find the X that marks the spot! |
+| **`gef config context.layout`** | Customize how context info is displayed, like arranging your toolbelt. |
 
 ### Debugging Techniques
 
-- `shell`: A magic spell to spawn a shell. Great for testing if you've got remote code execution powers.
-
-- `ropgadget`: Summon the ROP gadgets! Discover gadgets in the binary to craft your exploits. It's like assembling LEGO bricks.
-
-- `vmmap`: Unveil the virtual memory map. Know the lay of the land!
-
-- `i proc mappings`: Inspect the process's memory mappings. You're Sherlock Holmes hunting for clues.
-
-## Cheatsheet
-
-![pwndbg Cheatsheet](../../static/images/pwndbg-cheatsheet.png)
+| Command | Description |
+|:---------| :---------- |
+| **`shell`** | A magic spell to spawn a shell. Great for testing if you've got remote code execution powers. |
+| **`ropgadget`** | Summon the ROP gadgets! Discover gadgets in the binary to craft your exploits. It's like assembling LEGO bricks |
+| **`vmmap`** | Unveil the virtual memory map. Know the lay of the land! |
+| **`i proc mappings`** | Inspect the process's memory mappings. You're Sherlock Holmes hunting for clues. |
 
 ## Conclusion
 
