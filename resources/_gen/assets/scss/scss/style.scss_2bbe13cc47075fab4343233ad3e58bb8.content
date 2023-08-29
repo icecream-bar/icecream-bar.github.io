@@ -2,11 +2,11 @@
   --font-family-heading: Poppins;
   --font-family-paragraph: Helvetica;
   --font-family-monospace: monospace;
-  --base-color: #4B4453;
-  --base-offset-color: #eaeaea;
-  --highlight-color: #845EC2;
-  --heading-color: #1c1b1d;
-  --text-color: #FF8066;
+  --base-color: #C5C5C5;
+  --base-offset-color: #F9F871;
+  --highlight-color: #2C423F;
+  --heading-color: #2C423F;
+  --text-color: #949B96;
   --dot-color: #FF8066; }
 
 body, html {
