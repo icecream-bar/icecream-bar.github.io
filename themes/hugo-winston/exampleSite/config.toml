@@ -1,8 +1,8 @@
-baseURL = "https://icecream-bar.github.io/"
+baseURL = "/"
 languageCode = "en-us"
-theme = "hugo-winston"
+theme = "hugo-winston-theme"
 themesDir = "themes"
-title = "Icecream"
+title = "Hugo Winston Theme"
 paginate = 3
 pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
@@ -15,7 +15,7 @@ pygmentsUseClasses = true
 
 [params]
   google_analytics_id = ""
-  twitter_handle = "@BrevisFranco"
+  twitter_handle = "@zerostaticio"
   showAuthorOnHomepage = true
   showAuthorOnPosts = false
   showIntroContentOnHomepage = true
@@ -25,18 +25,12 @@ pygmentsUseClasses = true
   sortPostsByDateOldestFirst = false
   addDot = true
   addFrame = true
-  #Color pallette 
-  #845FC2
-  #4B4453
-  #B0A8B9
-  #C34C38
-  #FF8168
-  highlightColor = '#845EC2'
-  baseColor = "#4B4453"
+  highlightColor = '#7b16ff'
+  baseColor = "#ffffff"
   baseOffsetColor = "#eaeaea"
   headingColor = "#1c1b1d"
-  textColor = "#FF8066"
-  dotColor = "#FF8066"
+  textColor = "#4e5157"
+  dotColor = "#7b16ff"
   enableGoogleFonts = true 
   googleFontsUrl = "https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
   fontFamilyHeading = "Poppins"
@@ -62,6 +56,11 @@ pygmentsUseClasses = true
     identifier = "blog"
     weight = 2
     url = "/posts/"
+  [[menu.main]]
+    name = "About"
+    identifier = "about"
+    weight = 3
+    url = "/About/"
   [[menu.main]]
     name = "Tags"
     identifier = "tags"
